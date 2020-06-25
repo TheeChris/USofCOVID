@@ -1,0 +1,54 @@
+### Phase 1
+- May 4:
+    - high-risk individuals should continue shelter-in-place
+    - social gatherings <= 25 people
+    - essential travel restrictions are lifted
+    - continue remote work whenever possible
+    - religious services may convene inside places of worship
+    - manufacturers, industrial operations, and other infrastructure that has not been in operation may open
+    - public libraries may open
+    - dining rooms may open at 50%
+    - personal services by appointment only
+    - excluded Cass, Lake, and Marion counties
+- May 11:
+    - Lake and Marion counties reopened
+- May 18:
+    - Cass county reopened
+
+### Phase 2
+- May 22
+    - high-risk individuals should limit exposure
+    - continue remote work when possible
+    - social gatherings <= 100 people
+    - assisted living facilities and nursing homes remain closed to visitors
+    - no travel restrictions
+    - retail stores and malls may move to 75% capacity 
+    - mall common areas, such as food courts and sitting areas, are limited to 50% capacity
+    - gyms, fitness centers, etc may open
+    - community tennis and basketball courts, soccer and baseball fields, YMCA programs, and similar facilities may open 
+    - community pools may open
+    - campgrounds may open  
+    - raceways may open with no spectators
+    - day care facilities encouraged to open
+    - state park inns reopen
+- June 1
+    - youth summer day camps may open
+    - adult day service programs offered through the state’s Bureau of Developmental Disabilities Service
+
+### Phase 3
+- June 12:
+    - High-risk individuals to "remain cautious" at work and public spaces
+    - Social gatherings up to 250 people
+    - State government buildings will no longer have access restrictions.
+    - Professional office building employees may resume work at full capacity.
+    - Retail stores and malls may open at full capacity
+    - Restaurant dining room service may increase to 75% capacity
+    - Bars and nightclubs may open at 50% capacity
+    - Cultural, entertainment and tourism businesses (eg. museums, zoos, bowling alleys, and aquariums) may open at 50% capacity
+    - Large venues may reopen with social distancing rules
+    - Amusement parks, water parks and similar facilities may open at 50% capacity with required reservations to limit customers
+    - Movie theaters may open at 50% capacity
+    - Horse racing may begin with no spectators
+    - Playgrounds may reopen, though the state health commissioner recommended that parents take extra caution with their children after playing
+- June 15:
+    - Casinos reopened with guidelines
