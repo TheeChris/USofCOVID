@@ -1,0 +1,16 @@
+name: us-of-covid
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - ipykernel
+  - python=3.7
+  - pip
+  - pip:
+    - streamlit
+    - jupyter-server-proxy 
+    - nbserverproxy
+    - datetime
+    - numpy
+    - pandas
+    - plotly
