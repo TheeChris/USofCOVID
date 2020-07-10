@@ -86,7 +86,7 @@ def create_plot(data, state_data, col, col_dict, state="al"):
             ))
 
     fig.update_layout(
-        title=col,
+#         title=col,
         yaxis=dict(range=[0,data[col_dict[col]].max()*1.02]),
         xaxis=dict(
         rangeselector=dict(
@@ -101,12 +101,15 @@ def create_plot(data, state_data, col, col_dict, state="al"):
                      stepmode="backward"),
                 dict(step="all")
             ])
-        ),
+        ),   
         rangeslider=dict(
             visible=True
         ),
         type="date"
-    ))
+        )
+    )
+    
+    fig.update_yaxes(automargin=True)
 
     return st.plotly_chart(fig, use_container_width=True)
 
@@ -137,7 +140,7 @@ def tests_plot(data):
 
     # Add figure title
     fig.update_layout(
-        title_text="Testing Data",
+#         title_text="Testing Data",
         xaxis=dict(
         rangeselector=dict(
             buttons=list([

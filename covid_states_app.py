@@ -1,4 +1,5 @@
 import streamlit as st
+
 import numpy as np
 from draw_plots import tests_plot, load_data, process_state_tracker, create_plot
 import plotly.graph_objects as go
@@ -35,7 +36,6 @@ hosp_col = st.sidebar.selectbox(
 st.sidebar.markdown("---")
 
 
-## MAIN SECTION
 # load and process the data
 data = load_data(state=state_data[state]["abbr"])
 process_state_tracker(data)
@@ -60,18 +60,41 @@ st.sidebar.markdown("---")
 
 if pct_pos > 100:
     st.sidebar.markdown(
-        '<p style="font-size:120%;font-weigth;bold;color:#444444; text-align: center;">Percent Positve (Past Week)<br /><span style="font-size:300%;font-family: Impact, Charcoal, sans-serif;">No Data</span></p>',
+        '<p style="font-size:120%;font-weigth;bold;color:#444444; text-align: center;">'
+        +'Percent Positve (Past Week)<br />'
+        + '<span style="font-size:300%;font-family: Impact, Charcoal, sans-serif;">'
+        + 'No Data</span></p>',
         unsafe_allow_html=True
     )
 else:
     st.sidebar.markdown(
-        '<p style="font-size:120%;font-weigth;bold;color:#444444; text-align: center;">Percent Positve (Past Week)<br /><span style="font-size:300%;font-family: Impact, Charcoal, sans-serif;color:'+color+';">'+str(pct_pos)+'%</span></p>',
+        '<p style="font-size:120%;font-weigth;bold;color:#444444; text-align: center;">'
+        + 'Percent Positve (Past Week)<br />'
+        + '<span style="font-size:300%;font-family: Impact, Charcoal, sans-serif;color:'+color+';">'
+        + str(pct_pos)+'%</span></p>',
         unsafe_allow_html=True
     )
 
-## INTRO
-st.write(
-    "The purpose of this app is to be able to view multiple COVID-related metrics to get a more holistic view of trends in each state."
+# case fatality rate
+st.sidebar.markdown("---")
+cfr = np.round((data.death / data.positive).values[-1]*100, 2)
+st.sidebar.markdown(
+    '<p style="font-size:120%;font-weigth;bold;color:#444444; text-align: center;">Case Fatality Rate<br /><span style="font-size:300%;font-family: Impact, Charcoal, sans-serif;">'+str(cfr)+'</span><br /><span style="font-size:90%;">deaths per 100 cases</span></p>',
+    unsafe_allow_html=True
+)
+    
+# Contribute
+st.sidebar.markdown("---")
+st.sidebar.info(
+    "This is an open source project and you are welcome to **contribute** "
+    "[issues](https://github.com/TheeChris/USofCOVID/issues) or "
+    "[pull requests](https://github.com/TheeChris/USofCOVID/pulls) "
+    "to [source code](https://github.com/TheeChris/USofCOVID). "
+    )
+
+## MAIN SECTION
+st.subheader(
+    "State Population: {:,}".format(state_data[state]['Population'])
 )
 phases = st.checkbox("Show reopening dates and measures")
 
@@ -80,6 +103,7 @@ if phases:
         st.markdown(reader.read())
 
 # COVID+ hospitalizations
+st.header(hosp_col)
 create_plot(
     data, 
     state_data, 
@@ -89,6 +113,7 @@ create_plot(
 )
 
 # New COVID Cases
+st.header("New COVID Cases")
 create_plot(
     data, 
     state_data, 
@@ -98,9 +123,11 @@ create_plot(
 )
 
 # COVID testing plot
+st.header("Testing Data")
 tests_plot(data=data)
 
 # COVID-related deaths plot
+st.header("COVID-related Deaths")
 create_plot(
     data, 
     state_data, 

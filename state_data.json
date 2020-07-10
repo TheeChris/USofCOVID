@@ -7,7 +7,7 @@
         "Phase 2 Date": "",
         "Phase 3 Date": "",
         "Sources": "",
-        "Mask":"",
+        "Mask":"Required for employees of some businesses.",
         "Population":4903185
     },
     "Alaska": {
@@ -18,7 +18,7 @@
         "Phase 2 Date": "2020-05-08",
         "Phase 3 Date": "",
         "Sources": "",
-        "Mask":"",
+        "Mask":"Recommended",
         "Population":731545 
     },
     "Arizona": {
@@ -29,7 +29,7 @@
         "Phase 2 Date": "",
         "Phase 3 Date": "",
         "Sources": "",
-        "Mask":"",
+        "Mask":"Recommended",
         "Population":7278717 
     },
     "Arkansas": {
@@ -40,7 +40,7 @@
         "Phase 2 Date": "2020-05-18",
         "Phase 3 Date": "2020-06-15",
         "Sources": "",
-        "Mask":"",
+        "Mask":"Required for employees and patrons of some businesses",
         "Population":3017804
     },
     "California": {
@@ -51,6 +51,7 @@
         "Phase 2 Date": "",
         "Phase 3 Date": "",
         "Sources": "- https://covid19.ca.gov/roadmap/",
+        "Mask": "Recommended",
         "Population":39512223 
     },
     "Colorado": {
@@ -61,7 +62,7 @@
         "Phase 2 Date": "2020-06-01",
         "Phase 3 Date": "",
         "Sources": "",
-        "Mask":"",
+        "Mask":"Required for employees of some businesses",
         "Population":5758736 
     },
     "Connecticut": {
@@ -72,7 +73,7 @@
         "Phase 2 Date": "",
         "Phase 3 Date": "",
         "Sources": "",
-        "Mask":"",
+        "Mask":"Required for employees and patrons of some businesses",
         "Population":3565287
     },
     "Delaware": {
